@@ -31,7 +31,12 @@ Problem Set 3 (due midnight Jan 29)
 
      =====
 
+<<<<<<< HEAD
      from unittest.gui import TestCaseGui
+=======
+
+   from unittest.gui import TestCaseGui
+>>>>>>> origin/python3
 
      class myTests(TestCaseGui):
 
@@ -46,7 +51,11 @@ Problem Set 3 (due midnight Jan 29)
      :autograde: unittest
      :hidecode:
 
+<<<<<<< HEAD
      **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?)
+=======
+   **2.** The code provided does not iterate over the words in the English sentence that's stored in the variable ``sent``. Why not? Write a comment in the box below explaining why not. (Hint: Knowing what you know about how computers and programming languages deal with sequences, what do you need to do to make sure you can iterate over the words in the sentence?)
+>>>>>>> origin/python3
 
      Then, write code that assigns a variable word_list to hold a LIST of all the WORDS in the string sent. (It's fine if words include punctuation.)
      ~~~~
@@ -57,9 +66,13 @@ Problem Set 3 (due midnight Jan 29)
 
      =====
 
+<<<<<<< HEAD
      from unittest.gui import TestCaseGui
 
      class myTests(TestCaseGui):
+=======
+   class myTests(TestCaseGui):
+>>>>>>> origin/python3
 
         def testOne(self):
            print "No tests for the comment -- we have to read those!\n"
@@ -98,9 +111,18 @@ Problem Set 3 (due midnight Jan 29)
      myTests().main()
 
 .. activecode:: ps_3_4
+<<<<<<< HEAD
      :language: python
      :autograde: unittest
      :hidecode:
+=======
+   :language: python
+   :available_files: about_programming.txt
+   :autograde: unittest
+   :hidecode:
+
+   **4.** Write code to open the file we've included in this problem set, ``about_programming.txt``, and print out each of the first two lines only. (Don't worry about blank lines appearing.)
+>>>>>>> origin/python3
 
      **4** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``.
 
@@ -134,7 +156,13 @@ Problem Set 3 (due midnight Jan 29)
 
      from unittest.gui import TestCaseGui
 
+<<<<<<< HEAD
      class myTests(TestCaseGui):
+=======
+     def testOne(self):
+       self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
+>>>>>>> origin/python3
 
        def testOne(self):
            self.assertEqual(num_start_q, 5, "Testing that acc_num has been set to the number of words that start with 'q'.")
@@ -162,9 +190,85 @@ Problem Set 3 (due midnight Jan 29)
      myTests().main()
 
 .. activecode:: ps_3_7
+<<<<<<< HEAD
      :language: python
      :autograde: unittest
      :hidecode:
+=======
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **7.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
+
+   The output you get should be:
+
+   :: 
+
+     5
+     13
+     11
+     12
+     3
+     12
+     11
+     6 
+
+   Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop!).
+   ~~~~
+   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+   ====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+.. activecode:: ps_3_8
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **8.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+
+   HINT 1: Use the accumulation pattern!
+
+   HINT 2: the ``in`` operator checks whether a substring is present in a string.
+   ~~~~
+   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertIn('in', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
+
+   myTests().main()
+
+.. activecode:: ps_3_9
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **9.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   ~~~~
+   diction = {"python":"you are awesome","autumn":100}
+
+   # Write your code here.
+
+   ====
+>>>>>>> origin/python3
 
      **7** Write code to count the number of words that contain the lowercase character ``'i'`` but NOT the lowercase character ``'s'``. Assign that value to the variable ``i_not_s``.
 
@@ -181,4 +285,8 @@ Problem Set 3 (due midnight Jan 29)
        def testOne(self):
            self.assertEqual(i_not_s, 1, "Testing that i_not_s has been set to the number of words that contain an i but not an s.")
 
+<<<<<<< HEAD
      myTests().main()
+=======
+  Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+>>>>>>> origin/python3

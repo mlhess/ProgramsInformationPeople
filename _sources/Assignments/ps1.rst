@@ -92,7 +92,6 @@ Problem Set 1 (due midnight Jan 15)
 
     new_var = 824
 
-    ====
 
     from unittest.gui import TestCaseGui
 
@@ -296,6 +295,7 @@ Problem Set 1 (due midnight Jan 15)
 
     Consider (ungraded but important): Why is the length of ``short_sent`` longer than 15 characters?
 
+<<<<<<< HEAD
     Finally, write code to assign the index of the first ``'v'`` in the value of the variable ``sent`` TO a variable called ``index_of_v``. (Hint: we saw a method of the string class that can help with this)
     ~~~~
     sent = """
@@ -311,9 +311,20 @@ Problem Set 1 (due midnight Jan 15)
     """
 
     # Write your code here.
+=======
+    print(a)
+
+    print(b)
+
+    print(orange)
+>>>>>>> origin/python3
 
 
+<<<<<<< HEAD
      =====
+=======
+    print(pear)
+>>>>>>> origin/python3
 
     from unittest.gui import TestCaseGui
 
@@ -556,8 +567,20 @@ Problem Set 1 (due midnight Jan 15)
 
     **Keep in mind:** All ordinal numbers in *instructions*, like "third" or "fifth" refer to the way HUMANS count. How do you write code to find the right things?
     ~~~~
+<<<<<<< HEAD
     num_lst = [4,16,25,9,100,12,13]
     mixed_bag = ["hi", 4,6,8, 92.4, "see ya", "23", 23]
+=======
+    # For example
+    print greeting("Jackie")
+    print greeting("everybody")
+    print greeting("sdgadgsal")
+
+    # Try running all this code more than once, so you can see how calling the function
+    # random_digit works.
+    print random_digit()
+    print random_digit()
+>>>>>>> origin/python3
 
     # Write your code here:
 
@@ -569,7 +592,11 @@ Problem Set 1 (due midnight Jan 15)
     class myTests(TestCaseGui):
 
         def testOne(self):
+<<<<<<< HEAD
            self.assertEqual(third_elem, num_lst[2], "Testing that third_elem has been set to the third element of num_lst")
+=======
+            self.assertEqual(type(func_var), type(greeting), "Testing that func_var is same type as greeting")
+>>>>>>> origin/python3
         def testTwo(self):
            self.assertEqual(elem_sixth, num_lst[5], "Testing that elem_sixth has been set to the sixth element of num_lst")
         def testThree(self):
@@ -656,10 +683,13 @@ Problem Set 1 (due midnight Jan 15)
         'Tis some visitor, I muttered, tapping at my chamber door;
         Only this and nothing more."""
 
+<<<<<<< HEAD
     # Write your code here!
 
     =====
 
+=======
+>>>>>>> origin/python3
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):

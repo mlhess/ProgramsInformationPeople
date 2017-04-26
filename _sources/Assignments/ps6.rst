@@ -57,7 +57,22 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     =====
 
+<<<<<<< HEAD
     from unittest.gui import TestCaseGui
+=======
+      def testCode(self):
+         print("\n----The following tests are to ensure that you are not hard-coding the values.\n")
+         self.assertNotIn("Hello, SI106!!!", self.getEditorText(), "Testing to see if you've put Hello, SI106!!! in your code to hard-code.")
+         self.assertNotIn("Hello, world!!!", self.getEditorText(), "Testing to see if you've put Hello, world!!! in your code to hard-code.")
+         self.assertNotIn("Hey, everybody!", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("print", self.getEditorText(), "Testing to see if you've put Hey, everybody! in your code to hard-code.")
+      def testOutput(self):
+         self.assertIn("Hello, SI106!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertIn("Hello, world!!!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+         self.assertIn("Hey, everybody!", self.getOutput(), "Testing output. (Don't worry about actual and expected values)")
+
+   myTests().main()
+>>>>>>> origin/python3
 
     class myTests(TestCaseGui):
         def testOne(self):
@@ -101,7 +116,17 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     If you have never played Scrabble before, `here is an explanation <https://en.wikipedia.org/wiki/Scrabble>`_ of what it is. (You do not need that information to solve this problem. All you need to know is that each letter is associated with a number of points, and you want to find the ten words that are associated with the largest point totals.)
 
+<<<<<<< HEAD
     HINT: In the textbook section on Accumulating Results from a Dictionary, there is code that computes the scrabble score for the entire text of “A Study in Scarlet”. You may want to adapt that.
+=======
+   Here are some questions to consider. We won't grade your answers to these questions, but we suggest that you write them in the code as comments. They may help you think through this big nested data structure. You can test your answers using print statements. e.g. ``print(type(fb_data["data"]))``
+      
+   * What type is the structure saved in the variable ``fb_data``?
+   * What type does the expression ``fb_data["data"]`` evaluate to?
+   * What about ``fb_data["data"][1]``?
+   * What about ``fb_data["data"][0]["from"]``?
+   * What about ``fb_data["data"][0]["id"]``?
+>>>>>>> origin/python3
 
 
     ~~~~
@@ -174,7 +199,17 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     **7.** Define a function ``sort_nested_lists`` that accepts as input a list of lists of integers, e.g. ``[[2,3],[45,100,2],[536],[103,2,8]]``. It should return a sorted version of that list, sorted by the sum of the integers in each sub-list. For example, if that list were the function's input, the return value should be ``[[2,3],[103,2,8],[45,100,2],[536]]``.
 
+<<<<<<< HEAD
     **Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
+=======
+   ~~~~       
+   # Sample calls to this function
+   # (Remember, these won't work until you define the function blanked)
+   print(blanked("hello", "elj"))
+   #should output _ell_
+   print(blanked("almost","amsvr"))
+   # should output a_m_s_ 
+>>>>>>> origin/python3
 
     ~~~~
     # your definition of sort_nested_lists
@@ -228,11 +263,21 @@ Note: This will be the last problem you submit through the textbook! From now on
 
     **9.** Define a function ``onlyEvenWords`` that accepts a string and **uses list comprehension** and ``join`` to return a new string that only contains words where the length of the word is even. The body of ``onlyEvenWords`` should only be 2 lines or fewer.
 
+<<<<<<< HEAD
 
     ~~~~
     def onlyEvenWords(s):
         # your definition of onlyEvenWords
         pass
+=======
+   print(health_prompt(3, 7))
+   #this statement should produce the output
+   # +++----
+
+   print(health_prompt(0, 4))
+   #this statement should produce the output
+   # ----
+>>>>>>> origin/python3
 
 
     =====

@@ -81,7 +81,16 @@ Problem Set 5 (due midnight Feb 12)
 
     =====
 
+<<<<<<< HEAD
     from unittest.gui import TestCaseGui
+=======
+   # Some function calls and lines that print out the results
+   l = [3,46,6]
+   b = [4,"hi",10,"12",12,123,"whoa!"]
+   print(list_end_with_string([1,2]))
+   print(list_end_with_string(l))
+   print(list_end_with_string(b))
+>>>>>>> origin/python3
 
     class myTests(TestCaseGui):
 
@@ -92,9 +101,29 @@ Problem Set 5 (due midnight Feb 12)
     myTests().main()
 
 .. activecode:: ps_5_4
+<<<<<<< HEAD
     :language: python
     :autograde: unittest
     :hidecode:
+=======
+   :language: python
+   :autograde: unittest
+
+   **4.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns ``False`` otherwise.
+
+   ~~~~   
+   # Define your function here.
+
+
+   # Here's a couple example function calls, printing the return value
+   # to show you what it is.
+   print(is_prefix("He","Hello")) # should print True
+   print(is_prefix("Hello","He")) # should print False
+   print(is_prefix("Hi","Hello")) # should print False
+   print(is_prefix("lo","Hello")) # should print False
+   print(is_prefix("Hel","Hello")) # should print True
+   # Remember, these won't work at all until you have defined a function called is_prefix
+>>>>>>> origin/python3
 
     **4.** Write a function named ``words_starting_with`` that accepts a string ``sentence`` as an argument and returns a dictionary whose keys are letters that words in ``sentence`` start with and each value is a list of words starting with that letter. For example:
 
@@ -145,10 +174,33 @@ Problem Set 5 (due midnight Feb 12)
 
     myTests().main()
 
+<<<<<<< HEAD
 .. activecode:: ps_5_6
     :language: python
     :autograde: unittest
     :hidecode:
+=======
+**This is part of your Problem Set 5. It is graded. The other part is writing Python code, in Activecode windows, above.**
+
+For each step of this assignment, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the PS 5 Unix Exercises <https://umich.instructure.com/courses/105657/assignments/139051>`_ assignment on Canvas.
+
+----------
+
+.. external:: problem_set_5_unix_1
+
+    1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
+
+    **In the first file,** put the following:
+
+    .. sourcecode:: python
+
+        print("hello world")
+
+    Save the file as ``prog1.py``. You've now saved a Python program on your computer!
+
+
+    **In the second file,** put the following:
+>>>>>>> origin/python3
 
     **6.** Write three assignment statements with function calls to the function ``give_greeting``:
 
@@ -156,7 +208,11 @@ Problem Set 5 (due midnight Feb 12)
         * one that will return the string ``Hello, world!!!``
         * and one that will return the string ``Hey, everybody!``
 
+<<<<<<< HEAD
     You must write only the ``print`` command and function invocations of ``give_greeting`` to earn full credit on this problem.
+=======
+        print(greeting("there"))
+>>>>>>> origin/python3
 
     You can see the function definition in the code below, but that's only so you can understand exactly what the code is doing, so you can choose how to invoke this function. Feel free to make comments to help yourself understand, but otherwise DO NOT change the function definition code! **HINT:** calling the function with different inputs and printing the results, to see what happens, may be helpful! Make sure your final answer prints out all three of the strings listed above.
     ~~~~
@@ -282,6 +338,7 @@ Problem Set 5 (due midnight Feb 12)
     print my_map(lambda x: x*2, [1,2,3]) # should be [2,4,6]
     =====
 
+<<<<<<< HEAD
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):
@@ -293,3 +350,5 @@ Problem Set 5 (due midnight Feb 12)
             self.assertEqual(my_map(lambda c: c+'x', ["A", "B"]), ["Ax", "Bx"], "Example input")
 
     myTests().main()
+=======
+>>>>>>> origin/python3

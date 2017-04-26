@@ -61,7 +61,6 @@ Problem Set 2 (due midnight Jan 22)
     from unittest.gui import TestCaseGui
 
     class myTests(TestCaseGui):
-
         def testOne(self):
            self.assertEqual(fl, original_str[0], "Testing that fl has been set to first char in original_str")
            self.assertEqual(last_l, original_str[-1], "Testing that last_l has been set to last char in original_str")

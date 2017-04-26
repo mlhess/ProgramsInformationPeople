@@ -190,7 +190,11 @@ Problem Set 4 (due midnight Feb 5)
 
 	=====
 
+<<<<<<< HEAD
 	from unittest.gui import TestCaseGui
+=======
+       print(yp)
+>>>>>>> origin/python3
 
 	class myTests(TestCaseGui):
 
@@ -211,6 +215,7 @@ Problem Set 4 (due midnight Feb 5)
 
 	**8.** The code below contains a specially formatted string named ``january_temp_data`` that contains January temperature information for Ann Arbor for the years 2016 to 2000. Every year is on a different line. There are three "columns", separated by commas. The first column specifies the year, the second column specifies the lowest temperature (in Fahrenheit), and the third colun specifies the highest temperature (see the comment at the top of the code). Write code that will create two dictionaries: ``january_lows`` and ``january_highs`` that map years to low and high temperatures respectively. In both dictionaries, the keys should be **integers** (for each year) and the values should be **integers** for the temperatures. You will get zero credit if you hard code your answer.
 
+<<<<<<< HEAD
 	Hint: use ``.split('\n')`` to split the lines of ``january_temp_data`` into a list. Use ``.split(',')`` to split a given line. Use ``int()`` to cast strings to integers.
 	~~~~
 	# COLUMNS:
@@ -355,3 +360,6 @@ Problem Set 4 (due midnight Feb 5)
 		   self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
 
 	myTests().main()
+=======
+       Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
+>>>>>>> origin/python3
